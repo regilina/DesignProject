@@ -27,7 +27,6 @@
 	text-transform: uppercase;
 	font-style: italic;
 	font-size: 11px;
-	line-height: 15px;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -36,15 +35,16 @@
 	background: black;
 }
 
-.header__logo {
-	color: #E3B873;
-}
-
 .header__content {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	min-height: 83px;
+	font-size: 11px;
+}
+
+.header__logo {
+	color: #E3B873;
 }
 
 .header__navigation {
@@ -90,7 +90,13 @@
 	font-style: normal;
 	font-weight: 400;
 	font-size: 40px;
-	line-height: 53px;
 	text-transform: uppercase;
 	color: #FFFFFF;
+}
+
+.hero__text {
+	font-size: 22px;
+	color: #FFFFFF;
+	margin-top: 20px;
+	margin-bottom: 40px;
 }
