@@ -56,6 +56,10 @@
 	color: white;
 }
 
+.header__navigation-item a:hover {
+	color: #E3B873;
+}
+
 .hero {
 	background-image: url('../img/hero.jpg');
 	background-size: cover;
