@@ -1,9 +1,12 @@
 .body {
-	font-family: 'Nunito Sans';	
+	
 }
 
 .body * {
 	box-sizing: border-box;
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 400;
 }
 
 [class*="content"] {
@@ -23,7 +26,6 @@
 	color: white;
 	text-transform: uppercase;
 	font-style: italic;
-	font-weight: 400;
 	font-size: 11px;
 	line-height: 15px;
 	text-align: center;
