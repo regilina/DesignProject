@@ -159,9 +159,7 @@
 }
 
 .completed-projects__inf {
-	margin-top: 176px;/*
-	max-width: 442px;
-	min-height: 390px; */
+	margin-top: 176px;
 	flex-grow: grow;
 	display: flex;
 	flex-direction: column;
@@ -196,6 +194,7 @@
 	margin-top: auto;
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 	gap: 29.5px;
 }
 
@@ -214,6 +213,30 @@
 
 .completed-projects__circle:first-child{
 	background: #FFFFFF;
+}
+
+.completed-projects__online-control {
+	font-size: 20px;
+	line-height: 28px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-top: 92px;
+	margin-bottom: 13px;
+}
+
+.completed-projects__videocamera {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+}
+
+.completed-projects__line {
+	width: 32px;
+    height: 1.54px;
+	background: #E3B873;
+	border-radius: 30px;
 }
 
 
