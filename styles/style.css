@@ -103,6 +103,10 @@
 	color: #FFFFFF;
 }
 
+.hero__title-span {
+	color: #E3B873;
+}
+
 .hero__text {
 	font-size: 22px;
 	line-height: 36px;
@@ -155,9 +159,10 @@
 }
 
 .completed-projects__inf {
-	margin-top: 176px;
+	margin-top: 176px;/*
 	max-width: 442px;
-	min-height: 390px;
+	min-height: 390px; */
+	flex-grow: grow;
 	display: flex;
 	flex-direction: column;
 }
@@ -189,7 +194,28 @@
 
 .completed-projects__arrows {
 	margin-top: auto;
+	display: flex;
+	flex-direction: row;
+	gap: 29.5px;
 }
+
+.completed-projects__circles {
+	display: flex;
+	flex-direction: row;
+	gap: 17px;
+}
+
+.completed-projects__circle {
+	width: 9.57px;
+	height: 9.57px;
+	background: rgba(255, 255, 255, 0.3);
+	border-radius: 30px;
+}
+
+.completed-projects__circle:first-child{
+	background: #FFFFFF;
+}
+
 
 .completed-projects__text {
 	font-family: 'Nunito Sans';
