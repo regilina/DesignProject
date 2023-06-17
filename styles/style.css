@@ -24,6 +24,7 @@
 	align-items: center;
 	min-height: 83px;
 	font-size: 11px;
+	line-height: 15px;
 }
 
 .header__logo {
@@ -64,6 +65,7 @@
 	text-transform: uppercase;
 	font-style: italic;
 	font-size: 11px;
+	line-height: 15px;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -96,12 +98,14 @@
 	font-style: normal;
 	font-weight: 400;
 	font-size: 40px;
+	line-height: 53px;
 	text-transform: uppercase;
 	color: #FFFFFF;
 }
 
 .hero__text {
 	font-size: 22px;
+	line-height: 36px;
 	color: #FFFFFF;
 	margin-top: 20px;
 	margin-bottom: 40px;
@@ -114,6 +118,7 @@
 	color: #FFFFFF;
 	font-style: italic;
 	font-size: 11px;
+	line-height: 15px;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -142,28 +147,39 @@
 	font-weight: 400;
 }
 
+.completed-projects__inf-img-container {
+	display: flex;
+	flex-direction: row;
+	gap: 50px;
+	
+}
+
 .completed-projects__inf {
-	padding-top: 176px;
+	margin-top: 176px;
 	max-width: 442px;
 	min-height: 390px;
+	display: flex;
+	flex-direction: column;
 }
 
 .completed-projects__title {
 	font-size: 27px;
+	line-height: 37px;
 	letter-spacing: -0.07em;
 	text-transform: uppercase;
 	color: #E3B873;
-	padding-bottom: 34px;
+	margin-bottom: 34px;
 }
 
 .completed-projects__subtitle {
 	font-size: 18px;
+	line-height: 25px;
 	letter-spacing: 0;
-	padding-bottom: 9px;
+	margin-bottom: 9px;
 }
 
 .completed-projects__details {
-	padding-top: 42px;
+	margin-top: 42px;
 	display: grid;
 	grid-template-rows: 1fr 1fr;
 	grid-template-columns: 1fr 1fr;
@@ -171,14 +187,46 @@
 	row-gap: 34px;
 }
 
+.completed-projects__arrows {
+	margin-top: auto;
+}
+
 .completed-projects__text {
 	font-family: 'Nunito Sans';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
+	line-height: 27px;
 	color: #FFFFFF;
 }
 
 .completed-projects__span {
 	font-size: 13px;
+}
+
+.completed-projects__list {
+	margin-top: 107px;
+	display: flex;
+	flex-direction: row;
+	gap: 60.5px;
+}
+
+.completed-projects__list a {
+	font-size: 14px;
+	line-height: 19px;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.3);
+	text-decoration: none;
+}
+
+.completed-projects__list a:hover {
+	text-decoration: underline;
+	color: #E3B873;
+}
+
+.completed-projects__img {
+	margin-top: 52px;
+	width: 679px;
+ 	height: 482px;
+	background-image: url('../img/completed-projects__img1.jpg');
 }
