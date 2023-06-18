@@ -402,3 +402,35 @@
 	line-height: 27px;
 	border-style: none;
 }
+
+.online-control__form-checkbox {
+	margin-top: 39px;
+	text-align: center;
+}
+
+.online-control__label-checkbox {
+	cursor: pointer;
+}
+
+.online-control__checkbox {
+	display: none;
+}
+
+.online-control__fake {
+	display: inline-flex;
+	width: 18px;
+	height: 18px;
+	background: #E3B873;
+	color: #fff;
+	justify-content: center;
+}
+
+.online-control__fake::before {
+	content:"\2714";
+	opacity: 0;
+	transition: .2s;
+}
+
+.online-control__checkbox:checked + .online-control__fake::before{
+	opacity: 1;
+}
