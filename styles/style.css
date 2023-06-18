@@ -322,3 +322,21 @@
 	display: flex;
 	justify-content: end;
 }
+
+.online-control__line-under-video {
+	width: 55px;
+	margin: 62.5px auto 34.5px;
+} 
+
+.online-control__text {
+	color: #363636;
+}
+
+.online-control__paragraph {
+	font-size: 18px;
+	line-height: 37px;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+
+}
