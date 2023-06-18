@@ -254,28 +254,27 @@
 	background-image: url('../img/completed-projects__img1.jpg');
 }
 
-.online-control {
-	height: 1200px;
-}
-
-.online-control__title {
+.title {
 	font-size: 20px;
 	line-height: 28px;
 	text-align: center;
 	text-transform: uppercase;
-	color: #FFFFFF;
-	margin-top: -326px;
-	margin-bottom: 13px;
 }
 
-.online-control__videocamera {
+.online-control__title {
+	margin-top: -326px;
+	margin-bottom: 13px;
+	color: #FFFFFF;
+}
+
+.img-line-wrapper {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 8px;
 }
 
-.online-control__line {
+.line {
 	width: 32px;
     height: 1.54px;
 	background-color: #E3B873;
@@ -433,4 +432,19 @@
 
 .online-control__checkbox:checked + .online-control__fake::before{
 	opacity: 1;
+}
+
+.types-of-repair {
+	margin-top: 147.5px;
+	height: 1200px;
+}
+
+.types-of-repair__title {
+	font-family: 'Yeseva One';
+	font-style: normal;
+	font-weight: 400;
+	text-align: center;
+	text-transform: uppercase;
+	color: #181818;
+	margin-bottom: 13px;
 }
