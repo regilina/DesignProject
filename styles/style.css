@@ -471,3 +471,50 @@
 .types-of-repair__img_green {
 	background-image: url('../img/types-of-repair__img_green.jpg');
 }
+
+.types-of-repair__list-cost-wrapper {
+	width:330px;
+	margin: -127px auto 0;
+	background: #FFFFFF;
+	padding-top: 26px;
+}
+
+.types-of-repair__subtitle-list-wrapper {
+	margin-left: 34px;
+}
+
+.types-of-repair__subtitle {
+	font-family: 'Yeseva One';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 25px;
+	color: #363636;
+	margin-bottom: 13px;
+}
+
+.types-of-repair__list-of-completed-works {
+	list-style-type: disc;
+	list-style-position: inside;
+	font-size: 13px;
+	line-height: 27px;
+	color: #959595;
+}
+
+.types-of-repair__cost {
+	margin-top: 23px;
+	width: 228px;
+	height: 54px;
+	background: #E3B873;
+	box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+	font-family: 'Yeseva One';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: 17px;
+	padding-bottom: 17px;
+}
