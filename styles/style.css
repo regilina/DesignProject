@@ -67,7 +67,6 @@
 	font-size: 11px;
 	line-height: 15px;
 	text-align: center;
-	text-transform: uppercase;
 }
 
 .hero {
@@ -255,6 +254,10 @@
 	background-image: url('../img/completed-projects__img1.jpg');
 }
 
+.online-control {
+	height: 1200px;
+}
+
 .online-control__title {
 	font-size: 20px;
 	line-height: 28px;
@@ -342,4 +345,60 @@
 	margin-right: auto;
 	margin-left: auto;
 
+}
+
+.online-control__form {
+	width: 769px;
+	margin: 93.5px auto 0;
+}
+
+.online-control__input-button-wrapper {
+	display: flex;
+}
+
+.online-control__label {
+	font-size: 13px;
+	line-height: 21px;
+	color: rgba(54, 54, 54, 0.5);
+}
+
+.online-control__form-input {
+	width: 231px;
+	height: 45px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+}
+
+.online-control__form-input-name {
+	margin-right: 58px;
+}
+
+.online-control__form-input-phone {
+	margin-right: 49px;
+}
+
+.online-control__input {
+	border-style: none;
+}
+
+.online-control__input::placeholder  {
+	font-size: 14px;
+	line-height: 23px;
+	color: #363636;
+}
+
+.online-control__button {
+	width: 200px;
+	height: 51px;
+	background: #E3B873;
+	box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+	border-radius: 2px;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 13px;
+	line-height: 27px;
+	border-style: none;
 }
