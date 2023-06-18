@@ -275,8 +275,11 @@
 .online-control__line {
 	width: 32px;
     height: 1.54px;
-	background: #E3B873;
+	background-color: #E3B873;
+	border-color: #E3B873;
 	border-radius: 30px;
+	margin-right: 0;
+	margin-left: 0;
 }
 
 
