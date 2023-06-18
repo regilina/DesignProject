@@ -50,6 +50,7 @@
 .header__phone {
 	text-decoration-line: underline;
 	color: #E3B873;
+	margin-right: 45px;
 }
 
 .header__button {
