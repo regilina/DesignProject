@@ -519,3 +519,65 @@
 	padding-top: 17px;
 	padding-bottom: 17px;
 }
+
+.temp {
+	max-width: 1440px;
+	display: flex;
+	gap: 131px;
+	margin: 134px auto 322.5px;
+} 
+
+.types-of-repeair__services-background {
+	background-image: url('../img/types-of-repair__services-background.jpg');
+	width: 703px;
+	height: 645px;
+	padding-top: 117px;
+	padding-right: 79px;
+	padding-left: 241px;
+	padding-bottom: 54px;
+}
+
+.types-of-repair__circle {
+	display: flex;
+    justify-content: center;
+	align-items: center;
+    background: rgba(227, 184, 115, 1);
+    border: 8px solid #ffffff;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    border-radius: 50%;
+    width: 51.76px;
+    height: 51.76px;
+    font-family: "Yeseva One";
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 1);
+    padding-top: 5px;
+	flex-shrink: 0;
+	
+}
+
+.types-of-repair__services {
+	display: flex;
+	flex-direction: column;
+	gap: 86px;
+}
+
+.types-of-repair__service-wrapper {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 9px;
+}
+
+.types-of-repair__service {
+	font-size: 14px;
+	line-height: 19px;
+	color: #363636;
+}
+
+.types-of-repair__form {
+	width: 506px;
+	height: 509px;
+	background-color: #131313;
+	margin-top: 117px;
+}
