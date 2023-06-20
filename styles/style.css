@@ -344,7 +344,6 @@
 	text-align: center;
 	margin-right: auto;
 	margin-left: auto;
-
 }
 
 .online-control__form {
@@ -402,21 +401,23 @@
 	line-height: 27px;
 	border-style: none;
 }
-
-.online-control__form-checkbox {
-	margin-top: 39px;
+.form-checkbox {
 	text-align: center;
 }
 
-.online-control__label-checkbox {
+.online-control__form-checkbox {
+	margin-top: 39px;
+}
+
+.label-checkbox {
 	cursor: pointer;
 }
 
-.online-control__checkbox {
+.checkbox {
 	display: none;
 }
 
-.online-control__fake {
+.fake {
 	display: inline-flex;
 	width: 18px;
 	height: 18px;
@@ -425,13 +426,13 @@
 	justify-content: center;
 }
 
-.online-control__fake::before {
+.fake::before {
 	content:"\2714";
 	opacity: 0;
 	transition: .2s;
 }
 
-.online-control__checkbox:checked + .online-control__fake::before{
+.checkbox:checked + .fake::before{
 	opacity: 1;
 }
 
@@ -520,7 +521,7 @@
 	padding-bottom: 17px;
 }
 
-.temp {
+.types-of-repair__services-form-wrapper {
 	max-width: 1440px;
 	display: flex;
 	gap: 131px;
@@ -553,7 +554,6 @@
     color: rgba(255, 255, 255, 1);
     padding-top: 5px;
 	flex-shrink: 0;
-	
 }
 
 .types-of-repair__services {
@@ -580,4 +580,77 @@
 	height: 509px;
 	background-color: #131313;
 	margin-top: 117px;
+	padding: 28px 49px 27px;
+	display: flex;
+	flex-direction: column;
+}
+
+.types-of-repair__form-title {
+	font-size: 18px;
+	line-height: 26px;
+	text-align: center;
+	color: #FFFFFF;
+	margin-bottom: 39px;
+}
+
+.types-of-repair__form-input-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+
+}
+
+.types-of-repair__form-input-name {
+	display: flex;
+	flex-direction: column;
+}
+
+.types-of-repair__input {
+	border: none;
+	font-size: 14px;
+	line-height: 23px;
+	background:	#131313;
+	color: #FFFFFF;
+}
+
+.types-of-repair__input::placeholder {
+	color: #FFFFFF;
+}
+
+.types-of-repair__label {
+	font-size: 13px;
+	line-height: 21px;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.types-of-repair__form-input {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.types-of-repair__form-checkbox {
+	margin-top: 16px;
+}
+
+.types-of-repair__form-checkbox {
+	text-align: left;
+}
+
+.types-of-repair__checkbox-span {
+	font-size: 14px;
+	line-height: 163.68%;
+	color: #FFFFFF;
+}
+
+.types-of-repair__form-button {
+	width: 213px;
+	height: 51px;
+	background: #E3B873;
+	box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+	margin-top: 39px;
+	align-self: flex-end;
+	font-size: 13px;
+	line-height: 21px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
 }
