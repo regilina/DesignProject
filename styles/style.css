@@ -816,3 +816,83 @@
 	text-align: center;
 	font-size: 18px;
 }
+
+.our-clients__clients {
+	display: flex;
+	justify-content: space-between;
+}
+
+.our-clients__client {
+	width: 376px;
+	min-height: 428px;
+	padding-top: 24px;
+	padding-left: 20px;
+	padding-right: 31.5px;
+}
+
+.our-clients__photo-name-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 23px;
+}
+
+.our-clients__client-photo {
+	width: 76px;
+	height: 76px;
+	border-radius: 76px;
+	background: #FFF;
+	background-image: url('../img/our-clients__maria.jpg');
+}
+
+.our-clients__client-name {
+	color: #181818;
+	font-size: 18px;
+	font-family: Yeseva One;
+	line-height: 127.05%;
+	font-weight: 400;
+}
+
+.our-clients__client-feedback {
+	color: #959595;
+	font-size: 13px;
+	line-height: 180%;
+	margin-top: 24px;
+}
+
+.our-clients__client-square-time {
+	margin-bottom: -27px;
+	margin-top: 63px;
+	width: 293.753px;
+	height: 54px;
+	background: #E3B873;
+	box-shadow: 5px 5px 20px 0px rgba(227, 184, 115, 0.50);
+	display: flex;
+
+}
+
+.our-clients__client-square,
+.our-clients__client-time {
+	display: flex;
+	gap: 14px;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.our-clients__client-square {
+	width: 135.09px;
+	border-right: 1px solid #FFFFFF;
+}
+
+.our-clients__client-time {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.our-clients__client-square-time-text {
+	color: #FFF;
+	font-size: 17px;
+	font-family: Yeseva One;
+	line-height: 138.6%;
+	text-transform: uppercase;
+}
