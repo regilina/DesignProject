@@ -841,7 +841,18 @@
 	height: 76px;
 	border-radius: 76px;
 	background: #FFF;
+}
+
+.our-clients__maria {
 	background-image: url('../img/our-clients__maria.jpg');
+}
+
+.our-clients__sergey {
+	background-image: url('../img/our-clients__sergey.jpg');
+}
+
+.our-clients__egor {
+	background-image: url('../img/our-clients__egor.jpg');
 }
 
 .our-clients__client-name {
