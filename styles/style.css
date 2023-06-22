@@ -14,11 +14,12 @@
   	margin: auto;
 }
 
-.header {
-	background: black;
+.header, .footer {
+	background: #181818;
 }
 
-.header__content {
+.header__content, 
+.footer__content {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -27,33 +28,43 @@
 	line-height: 15px;
 }
 
-.header__logo {
+.footer__content {
+	min-height: 133px;
+}
+
+.header__logo, 
+.footer__logo {
 	color: #E3B873;
 	text-transform: uppercase;
 }
 
-.header__navigation {
+.header__navigation, 
+.footer__navigation {
 	list-style: none;
 	display: flex;
 	gap: 47px;
 }
 
-.header__navigation-item a {
+.header__navigation-item a, 
+.footer__navigation-item a {
 	text-decoration: none;
 	color: white;
 }
 
-.header__navigation-item a:hover {
+.header__navigation-item a:hover, 
+.footer__navigation-item a:hover {
 	color: #E3B873;
 }
 
-.header__phone {
+.header__phone, 
+.footer__phone {
 	text-decoration-line: underline;
 	color: #E3B873;
 	margin-right: 45px;
 }
 
-.header__button {
+.header__button, 
+.footer__button {
 	width: 161px;
 	height: 37px;
 	background: #E3B873;
@@ -701,7 +712,7 @@
 	background: linear-gradient(109.8deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%);
 }
 
-.types-of-repair__content {
+.types-of-repair__container {
 	position: relative;
 	z-index: 1;
 	display: flex;
