@@ -686,10 +686,9 @@
 .types-of-repair__styles {
 	background-image: url('../img/types-of-repair__styles-background.jpg');
 	min-width: 1440px;
-	min-height: 864px;
+	height: 864px;
 	background-size: cover;
 	position: relative;
-	padding-top: 137.5px;
 }
 
 .types-of-repair__overlay {
@@ -705,6 +704,8 @@
 .types-of-repair__content {
 	position: relative;
 	z-index: 1;
+	display: flex;
+	justify-content: space-between;
 }
 
 .types-of-repair__styles-title {
@@ -715,7 +716,9 @@
 	line-height: 37px;
 	text-transform: uppercase;
 	color: #E3B873;
+	margin-top: 137.5px;
 	margin-bottom: 47px;
+
 }
 
 .types-of-repair__styles-list {
@@ -738,4 +741,48 @@
 .types-of-repair__styles-list a:hover {
 	color: #E3B873;
 	text-decoration: underline;
+}
+
+.types-of-repair__styles-imgs-wrapper {
+	display: flex;
+	gap: 43px;
+}
+
+.types-of-repair__styles-clock-tv-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 39px;
+	margin-top: -41.16px;
+	margin-bottom: -41.2px;
+}
+
+.types-of-repair__styles-img-clock {
+	width: 354px;
+	height: 557.88px;
+	background-image: url('../img/types-of-repair__styles-img-clock.jpg');
+}
+
+.types-of-repair__styles-img-tv {
+	width: 354px;
+	height: 349.37px;
+	background-image: url('../img/types-of-repair__styles-img-tv.jpg');
+}
+
+.types-of-repair__styles-sofa-flower-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 36.5px;
+	margin-top: -112.53px;
+}
+
+.types-of-repair__styles-img-sofa {
+	width: 354px;
+	height: 275px;
+	background-image: url('../img/types-of-repair__styles-img-sofa.jpg');
+}
+
+.types-of-repair__styles-img-flower {
+	width: 354px;
+	height: 624.885px;
+	background-image: url('../img/types-of-repair__styles-img-flower.jpg');
 }
