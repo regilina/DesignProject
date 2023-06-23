@@ -1011,4 +1011,13 @@
 	margin-right: auto;
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 26px;
+}
+
+.contact__map {
+	width: 925px;
+	height: 465px;
+	background-image: url('../img/contact__map.jpg');
+	margin-left: auto;
+	margin-right: auto;
 }
