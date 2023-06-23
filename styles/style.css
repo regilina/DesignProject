@@ -393,7 +393,7 @@
 	border-style: none;
 }
 
-.online-control__input::placeholder  {
+.online-control__input::placeholder {
 	font-size: 14px;
 	line-height: 23px;
 	color: #363636;
@@ -603,19 +603,25 @@
 	margin-bottom: 39px;
 }
 
-.types-of-repair__form-input-wrapper {
+.types-of-repair__form-input-wrapper,
+.contact__form-input-wrapper {
 	display: flex;
 	flex-direction: column;
 	gap: 48px;
 
 }
 
-.types-of-repair__form-input-name {
+.types-of-repair__form-input-name,
+.contact__form-input-name,
+.contact__form-input-phone,
+.contact__form-input-question {
 	display: flex;
 	flex-direction: column;
 }
 
-.types-of-repair__input {
+
+.types-of-repair__input,
+.contact__input {
 	border: none;
 	font-size: 14px;
 	line-height: 23px;
@@ -623,17 +629,20 @@
 	color: #FFFFFF;
 }
 
-.types-of-repair__input::placeholder {
+.types-of-repair__input::placeholder,
+.contact__input::placeholder {
 	color: #FFFFFF;
 }
 
-.types-of-repair__label {
+.types-of-repair__label,
+.contact__label {
 	font-size: 13px;
 	line-height: 21px;
 	color: rgba(255, 255, 255, 0.5);
 }
 
-.types-of-repair__form-input {
+.types-of-repair__form-input, 
+.contact__form-input {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
@@ -642,13 +651,15 @@
 	text-align: left;
 }
 
-.types-of-repair__checkbox-span {
+.types-of-repair__checkbox-span,
+.contact__checkbox-span {
 	font-size: 14px;
 	line-height: 163.68%;
 	color: #FFFFFF;
 }
 
-.types-of-repair__form-button {
+.types-of-repair__form-button,
+.contact__form-button {
 	width: 213px;
 	height: 51px;
 	background: #E3B873;
@@ -820,6 +831,7 @@
 .our-clients__clients {
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 371px;
 }
 
 .our-clients__client {
@@ -906,4 +918,50 @@
 	font-family: Yeseva One;
 	line-height: 138.6%;
 	text-transform: uppercase;
+}
+
+.contact__form {
+	width: 883px;
+	height: 445.319px;
+	background: #131313;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -222.5px;
+	display: flex;
+	flex-direction: column;
+	padding: 34.4px 181.5px;
+}
+
+.contact__form-title {
+	margin-bottom: 45.8px;
+	color: #FFF;
+	text-align: center;
+	font-size: 20px;
+	font-family: Yeseva One;
+	line-height: 138.6%;
+	text-transform: uppercase;
+}
+
+.contact__form-name-phone {
+	display: flex;
+	gap: 58px;
+}
+
+.contact__form-input-name,
+.contact__form-input-phone {
+	width: 231px;
+}
+
+.contact__form-name-phone {
+	margin-bottom: 48.5px;
+}
+
+.contact__form-input-question {
+	margin-bottom: 46.5px;
+}
+
+.contact__form-button {
+	width: 200px;
+	justify-self: end;
+	align-self: center;
 }
