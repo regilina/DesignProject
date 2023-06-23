@@ -929,6 +929,7 @@
 }
 
 .contact__content {
+	padding: 5px;
 	position: relative;
 	z-index: 1;
 }
@@ -988,4 +989,18 @@
 	width: 200px;
 	justify-self: end;
 	align-self: center;
+}
+
+.contact__address-phone {
+	margin-top: 52px;
+	margin-bottom: 26px;
+	text-align: center;
+}
+
+.contact__address-phone span {
+	color: #E3B873;
+	font-size: 20px;
+	font-family: Yeseva One;
+	line-height: 138.6%;
+	text-transform: uppercase;
 }
