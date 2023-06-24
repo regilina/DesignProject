@@ -1,0 +1,66 @@
+@media screen and (min-width: 1440) {
+    .hero__text-mobile {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 1439px) {
+    [class*="content"] {
+        max-width: 339px;
+        margin: auto;
+    }
+
+    .header__content {
+	    min-height: 57px;
+        justify-content: space-between;
+    }
+
+    .header__navigation {
+        display: none;
+    }
+
+    .header__phone {
+        text-decoration-line: none;
+        color: #FFF;
+        margin-right: 0;
+    }
+
+    .header__button {
+        display: none;
+    }
+
+    .hero {
+        min-height: 476px;
+        padding-top: 85px;
+        padding-bottom: 61px;
+    }
+
+    .hero__title {
+        font-size: 23px;
+        line-height: 132.825%;
+    }
+
+    .hero__text-desktop {
+        display: none;
+    }
+
+    .hero__text {
+        font-size: 14px;
+        line-height: 135.84%;
+        margin-top: 16px;
+        margin-bottom: 48px;
+    }
+
+
+    .hero__button {
+        width: 339px;
+    }
+    
+    .hero__button_calculate-the-cost {
+        margin-bottom: 26px;
+    }
+    
+    .hero__button_submit-your-application {
+        
+    }
+}
