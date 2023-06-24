@@ -1,18 +1,25 @@
-@media screen and (min-width: 1440) {
+@media screen and (min-width: 1440px) {
     .hero__text-mobile {
+        display: none;
+    }
+
+    .hero__button-submite-mobile {
+        display: none;
+    }
+
+    .completed-projects__img-mobile {
         display: none;
     }
 }
 
 @media screen and (min-width: 375px) and (max-width: 1439px) {
     [class*="content"] {
-        max-width: 339px;
-        margin: auto;
+        padding-left: 18px;
+        padding-right: 18px;
     }
 
     .header__content {
 	    min-height: 57px;
-        justify-content: space-between;
     }
 
     .header__navigation {
@@ -51,7 +58,6 @@
         margin-bottom: 48px;
     }
 
-
     .hero__button {
         width: 339px;
     }
@@ -60,7 +66,39 @@
         margin-bottom: 26px;
     }
     
-    .hero__button_submit-your-application {
-        
+    .hero__button-submite-desktop {
+        display: none;
+    }
+
+    .completed-projects__content {
+        padding-top: 36px;
+    }
+
+    .completed-projects__inf-img-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .completed-projects__inf {
+        margin-top: 0;
+    }
+
+    .completed-projects__title {
+        margin-bottom: 22px;
+        text-align: center;
+        font-size: 22px;
+        font-family: Yeseva One;
+        line-height: 138.6%;
+        letter-spacing: -1.54px;
+    }
+
+    .completed-projects__text {
+        text-align: center;
+        font-size: 11px;
+        line-height: 158.48%;
+    }
+
+    .completed-projects__img-desktop {
+        display: none;
     }
 }

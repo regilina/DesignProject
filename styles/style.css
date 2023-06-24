@@ -261,9 +261,8 @@
 
 .completed-projects__img {
 	margin-top: 52px;
-	width: 679px;
- 	height: 482px;
-	background-image: url('../img/completed-projects__img1.jpg');
+	max-width: 679px;
+ 	max-height: 482px;
 }
 
 .title {
