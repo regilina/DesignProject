@@ -259,4 +259,36 @@
     .online-control__paragraph-desktop {
         display: none;
     }
+
+    .types-of-repair__examples {
+        margin-top: 40px;
+        flex-direction: column;
+        gap: 59px;
+        align-items: center;
+    }
+
+    .types-of-repair__list-cost-wrapper {
+        margin-left: 0;
+    }
+
+    .types-of-repair {
+        margin-top: 58px;
+    } 
+
+    .types-of-repair__title {
+        margin-bottom: 17px;
+    }
+
+    .types-of-repair__services-form-wrapper {
+        display: none;
+    }
+
+    .types-of-repair__img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer {
+        display: none;
+    }
 }

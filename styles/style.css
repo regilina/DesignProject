@@ -480,20 +480,8 @@
 }
 
 .types-of-repair__img {
-	width: 392px;
-	height: 421px;
-}
-
-.types-of-repair__img_blue {
-	background-image: url('../img/types-of-repair__img_blue.jpg');
-}
-
-.types-of-repair__img_orange {
-	background-image: url('../img/types-of-repair__img_orange.jpg');
-}
-
-.types-of-repair__img_green {
-	background-image: url('../img/types-of-repair__img_green.jpg');
+	max-width: 392px;
+	max-height: 421px;
 }
 
 .types-of-repair__list-cost-wrapper {
