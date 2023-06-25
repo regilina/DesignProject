@@ -197,4 +197,49 @@
     .online-control__text {
         color: #FFF;
     }
+
+    .online-control__input-button-wrapper {
+        flex-direction: column;
+        gap: 63px;
+        margin-bottom: 26.5px;
+        margin-top: 61px;
+    }
+
+    .online-control__input { 
+        width: 340px;
+        border-bottom: 1px solid #FFF;
+        background: #181818;
+    }
+
+    .online-control__label {
+        color: rgba(255, 255, 255, 0.50);
+    }
+
+    .online-control__input::placeholder {
+        color: #FFF
+    }
+
+    .online-control__button-desktop {
+        display: none;
+    }
+
+    .text {
+        color: #FFF;
+    }
+
+    .form-checkbox {
+        text-align: start;
+    }
+
+    .online-control__form-checkbox {
+        margin-top: 0;
+
+    }
+
+    .online-control__form {
+        width: 340px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+    }
 }
