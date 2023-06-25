@@ -184,4 +184,17 @@
         width: 12.19px;
         height: 12.19px;
     }
+
+    .online-control__line-under-video {
+        margin: 28px auto 21.5px;
+    } 
+
+    .online-control__paragraph {
+        font-size: 11px;
+        line-height: 169.8%;
+    }
+    
+    .online-control__text {
+        color: #FFF;
+    }
 }

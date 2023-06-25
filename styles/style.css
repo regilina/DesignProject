@@ -353,6 +353,7 @@
 .online-control__line-under-video {
 	width: 55px;
 	margin: 62.5px auto 34.5px;
+	border-color: #E3B873;
 } 
 
 .online-control__text {
