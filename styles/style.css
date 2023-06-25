@@ -194,6 +194,7 @@
 
 .completed-projects__details {
 	margin-top: 42px;
+	max-width: 408px;
 	display: grid;
 	grid-template-rows: 1fr 1fr;
 	grid-template-columns: 1fr 1fr;
@@ -297,9 +298,8 @@
 
 
 .online-control__video {
-	width: 817px;
-	height: 434px;
-	background-image: url('../img/video.jpg');
+	height: fit-content;
+	width: fit-content;
 	margin-top: 31px;
 	margin-right: auto;
 	margin-left: auto;
@@ -307,6 +307,12 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.online-control__video-img {
+	position: relative;
+	max-width: 817px;
+	max-height: 434px;
 }
 
 .online-control__overlay {
@@ -324,12 +330,17 @@
 	height: 85px;
 	background: #E3B873;
 	box-shadow: 0px 5px 30px rgba(227, 184, 115, 0.2);
-	position: relative;
+	
 	z-index: 1;
 	border-radius: 50%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
 }
 
 .online-control__play-triangle {

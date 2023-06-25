@@ -10,6 +10,10 @@
     .completed-projects__img-mobile {
         display: none;
     }
+
+    .online-control__play-triangle-mobile {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 375px) and (max-width: 1439px) {
@@ -42,6 +46,12 @@
         padding-bottom: 61px;
     }
 
+    .hero__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .hero__title {
         font-size: 23px;
         line-height: 132.825%;
@@ -56,10 +66,12 @@
         line-height: 135.84%;
         margin-top: 16px;
         margin-bottom: 48px;
+        text-align: center;
     }
 
     .hero__button {
         width: 339px;
+        margin-right: 0;
     }
     
     .hero__button_calculate-the-cost {
@@ -68,6 +80,11 @@
     
     .hero__button-submite-desktop {
         display: none;
+    }
+
+    .completed-projects {
+        min-height: 0;
+        background: #181818;
     }
 
     .completed-projects__content {
@@ -100,5 +117,71 @@
 
     .completed-projects__img-desktop {
         display: none;
+    }
+
+    .completed-projects__img {
+        width: 100%;
+        height: auto;
+        align-self: center;
+    }
+
+    .completed-projects__arrows {
+        display: none;
+    }
+
+    .completed-projects__subtitle {
+        margin-bottom: 13px;
+        font-size: 14px;
+        line-height: 138.6%;
+        letter-spacing: 0;
+        text-align: start;
+    }
+
+    .completed-projects__span {
+        font-size: 11px;
+        line-height: 135.84%;
+    }
+
+    .completed-projects__list {
+        display: none;
+    }
+
+    .completed-projects__details {
+        margin-top: 36.5px;
+        max-width: 339px;
+        column-gap: 40px;
+        row-gap: 27px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .online-control {
+        background: #181818;
+        margin-top: 0;
+        border: none;
+    }
+
+    .online-control__title {
+        margin-top: 0;
+        margin-bottom: 19px;
+    }
+
+    .online-control__video-img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .online-control__play {
+        width: 37px;
+        height: 37px;
+    }
+
+    .online-control__play-triangle-desktop {
+        display: none;
+    }
+
+    .online-control__play-triangle-mobile {
+        width: 12.19px;
+        height: 12.19px;
     }
 }
