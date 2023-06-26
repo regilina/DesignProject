@@ -26,6 +26,10 @@
     .types-of-repair__styles-img-mobile {
         display: none;
     }
+
+    .contact__map-mobile {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 375px) and (max-width: 1439px) {
@@ -385,19 +389,31 @@
     .contact__form-button {
         width: 340px;
         margin-top: 67px;
-    }
-
-    .contact__address-phone {
-        display: none; /* temp */
-    }
-
-    
-    .contact__mail-insta-icons {
-        display: none; /* temp */
+        margin-bottom: 46px;
     }
 
     .contact__map {
-        display: none; /* temp */
+        width: 100%;
+        height: auto;
+    }
+
+    .contact__map-desktop {
+        display: none;
+    }
+
+    .contact__address-phone {
+        margin-top: 46px;
+        margin-bottom: 23.5px;
+    }
+    
+    .contact__address-phone span {
+        font-size: 18px;
+        font-family: Yeseva One;
+        line-height: 138.6%;
+    }
+    
+    .contact__mail-insta-icons {
+        margin-bottom: 49px;
     }
 
     .footer {

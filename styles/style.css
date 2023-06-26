@@ -1017,9 +1017,9 @@
 }
 
 .contact__map {
-	width: 925px;
-	height: 465px;
-	background-image: url('../img/contact__map.jpg');
+	max-width: 925px;
+	max-height: 465px;
 	margin-left: auto;
 	margin-right: auto;
+	display: block;
 }
