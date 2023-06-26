@@ -325,12 +325,41 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: -50%;
     }
 
     .types-of-repair__styles-list {
         display: none;
     } 
+
+    .our-clients {
+        display: none;
+    }
+
+    .contact {
+        min-width: 0;
+        min-height: 0;
+        background: #181818;
+        height: 500px; /* temp */
+    }
+
+    .contact__form {
+        display: none; /* temp */
+    }
+
+    .contact__address-phone {
+        display: none; /* temp */
+    }
+
     
+    .contact__mail-insta-icons {
+        display: none; /* temp */
+    }
+
+    .contact__map {
+        display: none; /* temp */
+    }
+
     .footer {
         display: none;
     }

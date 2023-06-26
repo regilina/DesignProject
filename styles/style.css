@@ -489,6 +489,8 @@
 	margin: -127px auto 0;
 	background: #FFFFFF;
 	padding-top: 26px;
+	position: relative;
+	z-index: 1;
 }
 
 .types-of-repair__subtitle-list-wrapper {
