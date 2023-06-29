@@ -560,10 +560,15 @@
 	display: flex;
 	gap: 131px;
 	margin: 134px auto 242px;
+	
 } 
 
-.types-of-repeair__services-background {
+.types-of-repair__services-form-background {
 	background-image: url('../img/types-of-repair__services-background.jpg');
+	background-size: cover;
+}
+
+.types-of-repeair__services-background {
 	width: 703px;
 	height: 645px;
 	padding-top: 117px;

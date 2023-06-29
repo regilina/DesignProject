@@ -30,9 +30,14 @@
     .contact__map-mobile {
         display: none;
     }
+
+    .button-arrow-left,
+    .button-arrow-right {
+        display: none;
+    }
 }
 
-@media screen and (min-width: 375px) and (max-width: 1439px) {
+@media screen and (max-width: 1439px) {
     [class*="content"] {
         padding-left: 18px;
         padding-right: 18px;
