@@ -1,5 +1,5 @@
 @media screen and (min-width: 1440px) {
-    .hero__text-mobile {
+.hero__text-mobile {
         display: none;
     }
 
@@ -330,6 +330,8 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: -102px;
+        position: relative;
+        z-index: 1;
     }
 
     .types-of-repair__styles-list {
@@ -418,5 +420,55 @@
 
     .footer {
         display: none;
+    }
+
+    .img-button-container {
+        position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .completed-projects__img {
+        width: 100%;
+        height: auto;
+        align-self: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    .button-arrow {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        bottom: 50%;
+        width: 36px;
+        height: 36px;
+        background: #E3B873;
+        border-radius: 50%;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(50%);
+    }
+
+    .button-arrow-right {
+        right: 14px;
+    }
+
+    .button-arrow-left {
+        left: 14px;
+    }
+
+    .online-control__button-desktop {
+        display: none;
+    }
+
+    .online-control__button-play {
+        width: 37px;
+        height: 37px;
+
     }
 }
