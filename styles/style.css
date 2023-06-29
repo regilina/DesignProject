@@ -565,7 +565,8 @@
 
 .types-of-repair__services-form-background {
 	background-image: url('../img/types-of-repair__services-background.jpg');
-	background-size: cover;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 .types-of-repeair__services-background {
