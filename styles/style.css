@@ -811,6 +811,15 @@
 	background-image: url('../img/types-of-repair__styles-img-flower.jpg');
 }
 
+.our-clients {
+	background-image: url("../img/our-clients__background.jpg");
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: flex-end;
+}
+
 .our-clients__title {
 	margin-top: 110.5px;
 	margin-bottom: 13px;
