@@ -1,13 +1,34 @@
 document.addEventListener('DOMContentLoaded', () => {
   const entities = [
     {
-      img: './img/completed-projects__img1.jpg'
+      img: './img/completed-projects__img1.jpg',
+      details:
+      {
+        city: 'Rostov-on-Don \n LCD admiral',
+        repairTime: '3.5 months',
+        apartmentArea: '81 m2',
+        repairCost: 'Upon request'
+      }
     },
     {
-      img: './img/completed-projects__img2.jpg'
+      img: './img/completed-projects__img2.jpg',
+      details:
+      {
+        city: 'Sochi \n Thieves',
+        repairTime: '4 months',
+        apartmentArea: '105 m2',
+        repairCost: 'Upon request'
+      }
     },
     {
-      img: './img/completed-projects__img3.jpg'
+      img: './img/completed-projects__img3.jpg',
+      details:
+      {
+        city: 'Rostov-on-Don \n Patriotic',
+        repairTime: '3 months',
+        apartmentArea: '93 m2',
+        repairCost: 'Upon request'
+      }
     }
   ]
 
@@ -26,10 +47,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const next = document.querySelector('.next')
   const circles = document.querySelectorAll('.completed-projects__circle')
   const listItems = document.querySelectorAll('.completed-projects__list-item')
+  const details = document.querySelectorAll('.completed-projects__span')
+
   let currentIndex = 0
 
   prev.addEventListener('click', () => {
     setEntity(currentIndex === 0 ? entities.length - 1 : currentIndex - 1)
+    details[0].textContent = entities[currentIndex === 0 ? entities.length - 1 : currentIndex - 1].details.city
+    details[1].textContent = entities[currentIndex === 0 ? entities.length - 1 : currentIndex - 1].details.repairTime
+    details[2].textContent = entities[currentIndex === 0 ? entities.length - 1 : currentIndex - 1].details.apartmentArea
+    details[3].textContent = entities[currentIndex === 0 ? entities.length - 1 : currentIndex - 1].details.repairCost
+
     circles[currentIndex].classList.remove('active')
     listItems[currentIndex].classList.remove('list-item_active')
     currentIndex = currentIndex === 0 ? entities.length - 1 : currentIndex - 1
@@ -39,6 +67,12 @@ document.addEventListener('DOMContentLoaded', () => {
   })
   next.addEventListener('click', () => {
     setEntity(currentIndex === entities.length - 1 ? 0 : currentIndex + 1)
+
+    details[0].textContent = entities[currentIndex === entities.length - 1 ? 0 : currentIndex + 1].details.city
+    details[1].textContent = entities[currentIndex === entities.length - 1 ? 0 : currentIndex + 1].details.repairTime
+    details[2].textContent = entities[currentIndex === entities.length - 1 ? 0 : currentIndex + 1].details.apartmentArea
+    details[3].textContent = entities[currentIndex === entities.length - 1 ? 0 : currentIndex + 1].details.repairCost
+
     circles[currentIndex].classList.remove('active')
     listItems[currentIndex].classList.remove('list-item_active')
     currentIndex = currentIndex === entities.length - 1 ? 0 : currentIndex + 1
@@ -49,6 +83,12 @@ document.addEventListener('DOMContentLoaded', () => {
   listItems.forEach((item, index) => {
     item.addEventListener('click', () => {
       setEntity(index)
+
+      details[0].textContent = entities[index].details.city
+      details[1].textContent = entities[index].details.repairTime
+      details[2].textContent = entities[index].details.apartmentArea
+      details[3].textContent = entities[index].details.repairCost
+
       circles[currentIndex].classList.remove('active')
       listItems[currentIndex].classList.remove('list-item_active')
       currentIndex = index
@@ -60,6 +100,12 @@ document.addEventListener('DOMContentLoaded', () => {
   circles.forEach((item, index) => {
     item.addEventListener('click', () => {
       setEntity(index)
+
+      details[0].textContent = entities[index].details.city
+      details[1].textContent = entities[index].details.repairTime
+      details[2].textContent = entities[index].details.apartmentArea
+      details[3].textContent = entities[index].details.repairCost
+
       circles[currentIndex].classList.remove('active')
       listItems[currentIndex].classList.remove('list-item_active')
       currentIndex = index
