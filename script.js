@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
       img: './img/completed-projects__img2.jpg',
       details:
       {
-        city: `Sochi <br> Thieves`,
+        city: 'Sochi <br> Thieves',
         repairTime: '4 months',
         apartmentArea: '105 m2',
         repairCost: 'Upon request'
