@@ -261,8 +261,9 @@
 
 .completed-projects__list a:hover,
 .completed-projects__list .list-item_active a {
-	text-decoration: underline;
 	color: #E3B873;
+	padding-bottom: 6.7px;
+	border-bottom: 1px solid #E3B873;
 }
 
 .completed-projects__img {
@@ -271,6 +272,15 @@
  	height: 482px;
 	background-image: url('../img/completed-projects__img1.jpg');
 	background-size: cover;
+}
+
+.completed-projects__horizontal-line {
+	border: none;
+  border-top: 1px solid #E3B873;;
+  margin-top: -50px;
+	margin-bottom: 47px;
+  width: 92px;
+	margin-right: 280px;
 }
 
 .title {

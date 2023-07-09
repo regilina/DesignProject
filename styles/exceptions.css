@@ -176,6 +176,10 @@
         margin-right: auto;
     }
 
+    .completed-projects__horizontal-line {
+        display: none;
+    }
+
     .online-control {
         background: #181818;
         margin-top: 0;
