@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
       img: './img/completed-projects__img1.jpg',
       details:
       {
-        city: 'Rostov-on-Don \n LCD admiral',
+        city: 'Rostov-on-Don <br> LCD admiral',
         repairTime: '3.5 months',
         apartmentArea: '81 m2',
         repairCost: 'Upon request'
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
       img: './img/completed-projects__img2.jpg',
       details:
       {
-        city: 'Sochi \n Thieves',
+        city: `Sochi <br> Thieves`,
         repairTime: '4 months',
         apartmentArea: '105 m2',
         repairCost: 'Upon request'
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
       img: './img/completed-projects__img3.jpg',
       details:
       {
-        city: 'Rostov-on-Don \n Patriotic',
+        city: 'Rostov-on-Don <br> Patriotic',
         repairTime: '3 months',
         apartmentArea: '93 m2',
         repairCost: 'Upon request'
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   prev.addEventListener('click', () => {
     setEntity(currentIndex === 0 ? entities.length - 1 : currentIndex - 1)
-    details[0].textContent = entities[currentIndex === 0 ? entities.length - 1 : currentIndex - 1].details.city
+    details[0].innerHTML = entities[currentIndex === 0 ? entities.length - 1 : currentIndex - 1].details.city
     details[1].textContent = entities[currentIndex === 0 ? entities.length - 1 : currentIndex - 1].details.repairTime
     details[2].textContent = entities[currentIndex === 0 ? entities.length - 1 : currentIndex - 1].details.apartmentArea
     details[3].textContent = entities[currentIndex === 0 ? entities.length - 1 : currentIndex - 1].details.repairCost
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
   next.addEventListener('click', () => {
     setEntity(currentIndex === entities.length - 1 ? 0 : currentIndex + 1)
 
-    details[0].textContent = entities[currentIndex === entities.length - 1 ? 0 : currentIndex + 1].details.city
+    details[0].innerHTML = entities[currentIndex === entities.length - 1 ? 0 : currentIndex + 1].details.city
     details[1].textContent = entities[currentIndex === entities.length - 1 ? 0 : currentIndex + 1].details.repairTime
     details[2].textContent = entities[currentIndex === entities.length - 1 ? 0 : currentIndex + 1].details.apartmentArea
     details[3].textContent = entities[currentIndex === entities.length - 1 ? 0 : currentIndex + 1].details.repairCost
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     item.addEventListener('click', () => {
       setEntity(index)
 
-      details[0].textContent = entities[index].details.city
+      details[0].innerHTML = entities[index].details.city
       details[1].textContent = entities[index].details.repairTime
       details[2].textContent = entities[index].details.apartmentArea
       details[3].textContent = entities[index].details.repairCost
@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
     item.addEventListener('click', () => {
       setEntity(index)
 
-      details[0].textContent = entities[index].details.city
+      details[0].innerHTML = entities[index].details.city
       details[1].textContent = entities[index].details.repairTime
       details[2].textContent = entities[index].details.apartmentArea
       details[3].textContent = entities[index].details.repairCost
