@@ -227,7 +227,7 @@
 	border-radius: 30px;
 }
 
-.completed-projects__circle:first-child{
+.active {
 	background: #FFFFFF;
 }
 
@@ -259,15 +259,18 @@
 	text-decoration: none;
 }
 
-.completed-projects__list a:hover {
+.completed-projects__list a:hover,
+.completed-projects__list .list-item_active a {
 	text-decoration: underline;
 	color: #E3B873;
 }
 
 .completed-projects__img {
 	margin-top: 52px;
-	max-width: 679px;
- 	max-height: 482px;
+	width: 679px;
+ 	height: 482px;
+	background-image: url('../img/completed-projects__img1.jpg');
+	background-size: cover;
 }
 
 .title {

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/reset.css">
 		<link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/exceptions.css">
+    <script src="script.js"></script>
   </head>
   <body class="body">
   	<header class="header">
@@ -59,17 +60,17 @@
               <h2 class="completed-projects__title">Completed <br> projects</h2>
               <p class="completed-projects__text">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction <br>
                 market we have made happy more than 1000 families</p>
-<               <div class="img-button-container">
+                <div class="img-button-container">
                   <img class="completed-projects__img completed-projects__img-mobile" src="./img/completed-projects__img2.jpg" alt="interior with blue armchairs"></img>
                   <button class="button-arrow button-arrow-left">
                     <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M6.56569 12.478L1.08689 6.99975L6.56569 1.52147L7.34778 2.30348L2.65107 6.99975L7.34778 11.696L6.56569 12.478Z" fill="white" stroke="white" stroke-width="0.75"/>
-<                   /svg>
+                    </svg>
                   </button>
                   <button class="button-arrow button-arrow-right">
                     <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M1.43431 1.52197L6.91311 7.00025L1.43431 12.4785L0.652222 11.6965L5.34894 7.00025L0.652222 2.30399L1.43431 1.52197Z" fill="white" stroke="white" stroke-width="0.75"/>
-                    <svg>
+                    </svg>
                   </button>
                 </div>              
                 <div class="completed-projects__details">
@@ -93,28 +94,32 @@
                 </div>
               </div>
               <div class="completed-projects__arrows">
-                <svg width="42" height="14" viewBox="0 0 42 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M6.63807 13.2761L2.29917e-05 6.63808L6.63807 3.80641e-05L7.58563 0.947606L1.89516 6.63808L7.58563 12.3286L6.63807 13.2761Z" fill="white"/>
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.947579 5.96828L41.4556 5.96829L41.4556 7.30835L0.947578 7.30834L0.947579 5.96828Z" fill="white"/>
-                </svg>
+                <div class="prev">
+                  <svg width="42" height="14" viewBox="0 0 42 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.63807 13.2761L2.29917e-05 6.63808L6.63807 3.80641e-05L7.58563 0.947606L1.89516 6.63808L7.58563 12.3286L6.63807 13.2761Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.947579 5.96828L41.4556 5.96829L41.4556 7.30835L0.947578 7.30834L0.947579 5.96828Z" fill="white"/>
+                  </svg>
+                </div>
                 <div class="completed-projects__circles">
-                  <div class="completed-projects__circle"></div>
+                  <div class="completed-projects__circle active"></div>
                   <div class="completed-projects__circle"></div>
                   <div class="completed-projects__circle"></div>
                 </div>
-                <svg width="42" height="14" viewBox="0 0 42 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M35.0451 0L41.6831 6.63804L35.0451 13.2761L34.0975 12.3285L39.788 6.63804L34.0975 0.947567L35.0451 0Z" fill="white"/>
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M40.7356 7.30784L0.227569 7.30784L0.22757 5.96777L40.7356 5.96778L40.7356 7.30784Z" fill="white"/>
-                </svg>
+                <div class="next">
+                  <svg width="42" height="14" viewBox="0 0 42 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M35.0451 0L41.6831 6.63804L35.0451 13.2761L34.0975 12.3285L39.788 6.63804L34.0975 0.947567L35.0451 0Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M40.7356 7.30784L0.227569 7.30784L0.22757 5.96777L40.7356 5.96778L40.7356 7.30784Z" fill="white"/>
+                  </svg>
+                </div>
               </div>
             </div>
             <div>
               <ul class="completed-projects__list">
-                <li class="completed-projects__list-item"><a href="#">Rostov-on-Don, Admiral</a></li>
-                <li class="completed-projects__list-item"><a href="#">Sochi Thieves</a></li>
-                <li class="completed-projects__list-item"><a href="#">Rostov-on-Don Patriotic</a></li>
+                <li class="completed-projects__list-item list-item_active"><a>Rostov-on-Don, Admiral</a></li>
+                <li class="completed-projects__list-item"><a>Sochi Thieves</a></li>
+                <li class="completed-projects__list-item"><a>Rostov-on-Don Patriotic</a></li>
               </ul>
-              <img class="completed-projects__img completed-projects__img-desktop" src="./img/completed-projects__img1.jpg" alt="interior with dark armchairs"></img>
+              <div class="completed-projects__img completed-projects__img-desktop"></div>
             </div>
           </div>
         </div>
