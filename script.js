@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const prev = document.querySelector('.completed-projects__arrow-prev')
-  const next = document.querySelector('.completed-projects__arrow-next')
+  const prevSlide = document.querySelector('.completed-projects__arrow-prev')
+  const nextSlide = document.querySelector('.completed-projects__arrow-next')
   const circles = document.querySelectorAll('.completed-projects__circle')
   const listItems = document.querySelectorAll('.completed-projects__list-item')
   const details = document.querySelectorAll('.completed-projects__span')
@@ -50,24 +50,24 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   }
 
-  prev.addEventListener('click', () => {
-    setEntity(currentIndex === 0 ? entities.length - 1 : currentIndex - 1)
-    setDetails(currentIndex === 0 ? entities.length - 1 : currentIndex - 1)
+  function updateSlider (index) {
+    setEntity(index)
+    setDetails(index)
     circles[currentIndex].classList.remove('active')
     listItems[currentIndex].classList.remove('list-item_active')
-    currentIndex = currentIndex === 0 ? entities.length - 1 : currentIndex - 1
+    currentIndex = index
     circles[currentIndex].classList.add('active')
     listItems[currentIndex].classList.add('list-item_active')
+  }
+
+  prevSlide.addEventListener('click', () => {
+    const newIndex = currentIndex === 0 ? entities.length - 1 : currentIndex - 1
+    updateSlider(newIndex)
   })
 
-  next.addEventListener('click', () => {
-    setEntity(currentIndex === entities.length - 1 ? 0 : currentIndex + 1)
-    setDetails(currentIndex === entities.length - 1 ? 0 : currentIndex + 1)
-    circles[currentIndex].classList.remove('active')
-    listItems[currentIndex].classList.remove('list-item_active')
-    currentIndex = currentIndex === entities.length - 1 ? 0 : currentIndex + 1
-    circles[currentIndex].classList.add('active')
-    listItems[currentIndex].classList.add('list-item_active')
+  nextSlide.addEventListener('click', () => {
+    const newIndex = currentIndex === 0 ? entities.length - 1 : currentIndex - 1
+    updateSlider(newIndex)
   })
 
   listItems.forEach((item, index) => {
