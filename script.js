@@ -38,15 +38,15 @@ document.addEventListener('DOMContentLoaded', () => {
     img.style.backgroundImage = `url(${entities[index].img})`
   }
 
-  const setDetails = index => {
-    details[0].innerHTML = entities[index].details.city
-    details[1].textContent = entities[index].details.repairTime
-    details[2].textContent = entities[index].details.apartmentArea
-    details[3].textContent = entities[index].details.repairCost
+  const setDetails = (index) => {
+    const entityDetails = entities[index].details
+    Object.entries(entityDetails).forEach(([key, value], i) => {
+      details[i].innerHTML = value
+    })
   }
 
-  const prev = document.querySelector('.prev')
-  const next = document.querySelector('.next')
+  const prev = document.querySelector('.completed-projects__arrow-prev')
+  const next = document.querySelector('.completed-projects__arrow-next')
   const circles = document.querySelectorAll('.completed-projects__circle')
   const listItems = document.querySelectorAll('.completed-projects__list-item')
   const details = document.querySelectorAll('.completed-projects__span')

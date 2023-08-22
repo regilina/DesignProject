@@ -140,12 +140,6 @@
         display: none;
     }
 
-    .completed-projects__img {
-        width: 100%;
-        height: auto;
-        align-self: center;
-    }
-
     .completed-projects__arrows {
         display: none;
     }
