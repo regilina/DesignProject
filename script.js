@@ -1,4 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const prev = document.querySelector('.completed-projects__arrow-prev')
+  const next = document.querySelector('.completed-projects__arrow-next')
+  const circles = document.querySelectorAll('.completed-projects__circle')
+  const listItems = document.querySelectorAll('.completed-projects__list-item')
+  const details = document.querySelectorAll('.completed-projects__span')
+  const img = document.querySelector('.completed-projects__img-desktop')
+  let currentIndex = 0
   const entities = [
     {
       img: './img/completed-projects__img1.jpg',
@@ -32,8 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   ]
 
-  const img = document.querySelector('.completed-projects__img-desktop')
-
   const setEntity = (index) => {
     img.style.backgroundImage = `url(${entities[index].img})`
   }
@@ -45,14 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   }
 
-  const prev = document.querySelector('.completed-projects__arrow-prev')
-  const next = document.querySelector('.completed-projects__arrow-next')
-  const circles = document.querySelectorAll('.completed-projects__circle')
-  const listItems = document.querySelectorAll('.completed-projects__list-item')
-  const details = document.querySelectorAll('.completed-projects__span')
-
-  let currentIndex = 0
-
   prev.addEventListener('click', () => {
     setEntity(currentIndex === 0 ? entities.length - 1 : currentIndex - 1)
     setDetails(currentIndex === 0 ? entities.length - 1 : currentIndex - 1)
@@ -62,6 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     circles[currentIndex].classList.add('active')
     listItems[currentIndex].classList.add('list-item_active')
   })
+
   next.addEventListener('click', () => {
     setEntity(currentIndex === entities.length - 1 ? 0 : currentIndex + 1)
     setDetails(currentIndex === entities.length - 1 ? 0 : currentIndex + 1)
